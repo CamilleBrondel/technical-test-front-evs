@@ -1,0 +1,3 @@
+<app-item-list></app-item-list>
+<button (click)="isItemFormOpen = true">Add Item</button>
+<app-item-form [isOpen]=isItemFormOpen (closePopupEvent)="isItemFormOpen = false"></app-item-form>

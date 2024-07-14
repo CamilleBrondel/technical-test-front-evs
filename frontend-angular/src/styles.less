@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@orange:#fb5607;
+@orange-fade:#fc6d35;
+
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 16px;
+}
+
+button{
+    font-family: Ubuntu, sans-serif;
+    font-size:16px;
+    font-weight: 700;
+    border-radius: 16px;
+    color: #fdfffc;
+    background-color: @orange;
+    padding:18px 24px;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @orange-fade;
+    }
+
+    &:disabled{
+        cursor:not-allowed;
+        background-color: @orange-fade;
+    }
+}
+
+input{
+    padding: 16px;
+    border-radius: 16px;
+    border: 3px solid #b1b3b5;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:focus, &:focus-visible{
+        border-color: #fdac84;
+        outline: none;
+    }
+
+    &::placeholder {
+        font-family: sans-serif;
+        opacity: 0.5;
+        color: rgb(22, 22, 22);
+    }
+}

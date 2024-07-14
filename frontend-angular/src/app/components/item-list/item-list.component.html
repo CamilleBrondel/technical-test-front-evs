@@ -1,0 +1,13 @@
+<div *ngIf="(items$ | async)?.length">
+    <ul>
+      <li *ngFor="let item of (items$ | async)">
+        {{ item.name }}
+      </li>
+    </ul>
+</div>
+<div *ngIf="!(items$ | async)?.length">
+    No items available.
+</div>
+<div *ngIf="error$ | async as error">
+  <p>Error: {{ error }}</p>
+</div>

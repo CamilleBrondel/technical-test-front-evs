@@ -1,0 +1,38 @@
+.form-container{
+    position: fixed;
+    top:5vh;
+    left: calc(50% - 15vw - 48px);
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff8f5;
+    border-radius: 16px;
+    padding: 48px;
+    width: 30vw;
+    box-shadow: 0 7px 60px 0 rgba(0, 152, 255, .12);
+    
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+
+    svg{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    .form-container{
+        width: 50%;
+        left: calc(50% - 25vw - 48px);
+    }
+}
