@@ -1,3 +1,15 @@
+### Instructions pour lancer l'application avec Docker
+
+- Cloner le projet et se mettre sur la branche "technical-test-camille-brondel"
+- Lancer Docker Desktop
+- Ouvrir un powershell dans le dossier "technical-test-front-evs"
+- Utiliser la commande "docker-compose up --build"
+- Attendre que les deux conteneurs soit prêts dans docker desktop
+- Cliquer sur le lien front ou ouvrir "localhost:80" dans un navigateur
+
+
+
+
 ### Test Technique pour Développeurs Frontend (Angular/React/React Native/Ionic)
 
 #### Objectif
